@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ask the Audience</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div id="connection-count"></div>
+      <h5 id="status-message"></h5>
+      <h3>Cast Your Vote!</h3>
+      <div id="choices">
+        <div class="col-xs-3">
+          <button id='A' class='btn btn-default'>A</button>
+        </div>
+        <div class="col-xs-3">
+          <button id='B' class='btn btn-default'>B</button>
+        </div>
+        <div class="col-xs-3">
+          <button id='C' class='btn btn-default'>C</button>
+        </div>
+        <div class="col-xs-3">
+          <button id='D' class='btn btn-default'>D</button>
+        </div>
+      </div>
+      <!-- <ul id="tally"></ul> -->
+      <div class="vote-count col-xs-6 col-xs-offset-3">
+
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+              <th>C</th>
+              <th>D</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id='tally'></tr>
+          </tbody>
+        </table>
+        <h5 id='your-vote'></h5>
+      </div>
+
+    </div>
+    <!-- Make sure your JS is at the bottom of the body! -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

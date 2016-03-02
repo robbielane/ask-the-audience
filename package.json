@@ -1,0 +1,18 @@
+{
+  "name": "ask-the-audience",
+  "version": "1.0.0",
+  "description": "practice web socket app",
+  "main": "y",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "author": "Robbie Lane",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jquery": "^2.2.1",
+    "lodash": "^4.6.0",
+    "socket.io": "^1.4.5"
+  }
+}
